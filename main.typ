@@ -72,20 +72,28 @@ PATRICK YOUNG",center)
 ])
 #pagebreak()
 === *Primary Persona*
-#table(columns:(1fr, 1fr,1fr),[*What they do*\
-- Teaches students the absolute basics of micro-controllers (like Arduino) and programming, aiming to build a strong, transferable foundation.
+#table(columns:(1fr, 1fr,1fr),[*Where they are* 
+- In school, often the design center
+- Educational technology conferences
+- Nearby schools],[*What they do*\
+- Teaches students the absolute basics of micro-controllers.
 
-- Guides students through the physical process of building circuits, attaching sensors, and connecting components like servo motors.
+- Guides students through the physical process of building circuits.
 
-- Assists students ranging from absolute beginners to more advanced students needing help with complex electronics in design classes.
+- Assists students with a range of experiences who need help in electronics
 ],[*Why they do it*\
-- They are motivated by a desire to make technology accessible. They want to motivate kids and give them a "driving force" to push through the barrier of entry of electronics.
+- A desire to make technology accessible. 
 
-- They believe in the value of hands-on learning and want to create positive, successful first experiences that prevent students from being discouraged.
+- They believe in the value of hands-on learning
 ], [*Whats stopping them*\
-- Existing educational micro-controllers have a steep learning curve. Students often give up easily because the complexity of the hardware feel daunting right from the start. 
-- Easily bent pins make hardware non-reusable, creating logistical and cost issues. Delicate wires and poorly designed connectors cause physical fatigue for students and make it difficult to know if a connection is even secure.
-- Available simplified boards often rely on proprietary sensors, which limits options and increases costs. This forces them to either use expensive, closed systems or default to older, slower, and more frustrating tools.])
+- Existing educational micro-controllers have a steep learning curve.
+- Poorly designed hardware can inhibit reuse and cause fatigue to users.
+- Available solutions rely on proprietary sensors, which limits options and increases costs.],
+[*Who or what informs me*\
+- Direct interaction with students
+- Direct interaction with products available in school
+- Online resources and websites
+- Colleagues and personnel in the same field])
 
 #pagebreak()
 == A.2: *Presents a Storyboard*
