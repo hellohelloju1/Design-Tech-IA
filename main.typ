@@ -1,4 +1,4 @@
-\
+ \
 \
 \
 \
@@ -12,42 +12,95 @@ PATRICK YOUNG",center)
 
 
 #pagebreak()
-*Criterion A - Empathize* \
-*Interview 1*
+= *Criterion A - Empathize* \
+== A.1: *Analysis of Primary Persona*
+
+=== *Interview 1*
 #table(columns:(0.6fr, 1fr),[
   #image("A-Images/SuSu.png")
 ],[
-  #text(size: 14pt,[ *\ Name:* Name1 \ *Occupation:* EdTech Teaching Assistant \ \ *Introduction:* Name1 is a educational technology faculty member at an international school in Beijing. She teaches an electronics/arduino extracurricular, among other things.])
+  #text(size: 12pt,[ *\ Name:* Name1 \ *Occupation:* EdTech Teaching Assistant \ \ *Introduction:* Name1 is a educational technology faculty member at an international school in Beijing. She teaches an electronics/arduino extracurricular, among other things.])
 ])
 #table(columns: (1fr, 0.4fr),stroke:none,
 [*Goals*
 - Teach students with no prior knowledge the basics of micro-controllers like Arduino.
-- Give students transferrable knowledge regarding electronics
+- Give students transferrable knowledge regarding electronics / set a foundation for further learning
 - Find a way to motive kids and give them a driving force
-- 
 \
 
   *Frustrations*
 \
-- Most microcontrollers for education have a high barrier of entry, and students often give up easily due to the level of difficulty
-- Attaching],
+- Most micro-controllers for education have a high barrier of entry, and students often give up easily due to the level of difficulty
+- The interface of pins can be daunting for students, driving them away.
+- Easily bent pins make hardware un-reusable],
 
-[*Interview Summary*
+[*Image placeholders*
 \
-])
+\
+\
+*Potential Solutions*\
+1. A simplified arduino-esque device that uses one standardized port
+2. A replacement for pins that are not as fragile or posable
+3. Swappable port modules for arduino-esque devices])
 
 #pagebreak()
-*Secondary Persona*
+=== *Interview 2*
+#table(columns:(0.6fr, 1fr),[
+  #image("A-Images/DIEGO.png")
+],[
+  #text(size: 14pt,[ *\ Name:* Name2 \ *Occupation:* Design Center Technician & Electronics Specialist\ \ *Introduction:* Name1 is a part-time faculty member at an international school in Beijing in the design center. He specializes in electronics and electronics, and helps in various classes involving micro-controllers.])
+])
 #table(columns: (1fr, 0.4fr),stroke:none,
 [*Goals*
-- Teach students the basics of electronics and microcontrollers like arduino.
-- Find a way to motive kids and give them a driving force
+- To teach students programming (at varying levels of difficulty depending on grade).
+- N/A
+- N/A
 \
 
   *Frustrations*
 \
-- Products on the market are either too complicated or too simple],
+- Existing solutions are old and/or slow.
+- The boards that currently exist which aims to simplify the learning process is only compatible with proprietary sensors, making options very limited and costly
+- N/A],
 
-[*Client intro*
+[*Image placeholders*
 \
-Name2 is a student who has just started learning electronics.])
+\
+\
+*Potential Solutions*\
+1. A replacement board that features universal ports, but also a kit that can make normal components compatible.
+])
+#pagebreak()
+=== *Primary Persona*
+#table(columns:(0.6fr, 1fr),[
+  #image("A-Images/DIEGO.png")
+],[
+  #text(size: 14pt,[ *\ Name:* Name2 \ *Occupation:* Design Center Technician & Electronics Specialist\ \ *Introduction:* Name1 is a part-time faculty member at an international school in Beijing in the design center. He specializes in electronics and electronics, and helps in various classes involving micro-controllers.])
+])
+#table(columns: (1fr, 0.4fr),stroke:none,
+[*Goals*
+- To teach students programming (at varying levels of difficulty depending on grade).
+- N/A
+- N/A
+\
+
+  *Frustrations*
+\
+- Existing solutions are old and/or slow.
+- The boards that currently exist which aims to simplify the learning process is only compatible with proprietary sensors, making options very limited and costly
+- N/A],
+
+[*Image placeholders*
+\
+])
+#pagebreak()
+== A.2: *Presents a Storyboard*
+=== Scenario 1 \ 
+*User:* Electronics Student \
+*Task:* User is given a micro-bit with an extension board and a temperature sensor, and is asked to attach the sensor to the board.
+  #image("A-Images/Storyboard1.png",width:90%)
+#pagebreak()
+=== Scenario 2 \ 
+*User:* Electronics Student \
+*Task:* User is given an Arduino, a servo motor, and jumper cables. User is asked to attach the servo.
+  #image("A-Images/Storyboard1.png",width:90%)
