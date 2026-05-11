@@ -2,7 +2,7 @@
 \
 \
 \
-#set text(size:14pt)
+#set text(size:12pt)
 #align("IB DESIGN TECHNOLOGY
 INTERNAL ASSESSMENT
 
@@ -93,7 +93,9 @@ PATRICK YOUNG",center)
 - Direct interaction with students
 - Direct interaction with products available in school
 - Online resources and websites
-- Colleagues and personnel in the same field])
+- Colleagues and personnel in the same field],
+table.cell(stroke: none)[]
+)
 
 #pagebreak()
 == A.2: *Presents a Storyboard*
@@ -106,3 +108,16 @@ PATRICK YOUNG",center)
 *User:* Electronics Student \
 *Task:* User is given an Arduino, a servo motor, and jumper cables. User is asked to attach the servo.
   #image("A-Images/Meow.png",width:95%)
+  
+#pagebreak()
+== A.3
+#image("analysis1.png")
+
+#pagebreak()
+== B.1
+=== Context
+
+=== 
+Students of electronics across age levels and proficiencies face difficulties when using existing electronics education kits such as Hummingbird and Arduino extension boards. These kits often require abstract wiring knowledge, complex troubleshooting, and prior understanding of circuit diagrams, which many beginner learners lack, more beginner friendly kits also lack the freedom and degree of control proficient users desire. 
+
+As a result, students spend more time debugging connections than learning core electronics concepts, leading to frustration, disengagement, and low task completion rates. Teachers also report that current kits are not designed for rapid, intuitive assembly, making them unsuitable for single-session classroom activities.
