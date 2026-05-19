@@ -16,60 +16,53 @@ PATRICK YOUNG",center)
 == A.1: *Analysis of Primary Persona*
 
 === *Interview 1*
-#table(columns:(0.6fr, 1fr),[
+#table(columns:(0.3fr, 1fr),[
   #image("A-Images/SuSu.png")
 ],[
-  #text(size: 12pt,[ *\ Name:* Name1 \ *Occupation:* EdTech Teaching Assistant \ \ *Introduction:* Name1 is a educational technology faculty member at an international school in Beijing. She teaches an electronics/arduino extracurricular, among other things.])
+  #text([ *\ Name:* Name1 \ *Occupation:* EdTech Teaching Assistant \ \ *Introduction:* Name1 is a educational technology faculty member at an international school in Beijing. She teaches an electronics/arduino extracurricular, among other things.])
 ])
-#table(columns: (1fr, 0.4fr),stroke:none,
-[*Goals*
+*Goals*
 - Teach students with no prior knowledge the basics of micro-controllers like Arduino.
 - Give students transferrable knowledge regarding electronics / set a foundation for further learning
 - Find a way to motive kids and give them a driving force
 \
-
   *Frustrations*
 \
 - Most micro-controllers for education have a high barrier of entry, and students often give up easily due to the level of difficulty
 - The interface of pins can be daunting for students, driving them away.
-- Easily bent pins make hardware un-reusable],
+- Easily bent pins make hardware un-reusable
 
-[*Image placeholders*
-\
-\
-\
-*Potential Solutions*\
-1. A simplified arduino-esque device that uses one standardized port
-2. A replacement for pins that are not as fragile or posable
-3. Swappable port modules for arduino-esque devices])
+// [*Image placeholders*
+// \
+// \
+// \
+// *Potential Solutions*\
+// 1. A simplified arduino-esque device that uses one standardized port
+// 2. A replacement for pins that are not as fragile or posable
+// 3. Swappable port modules for arduino-esque devices])
 
-#pagebreak()
 === *Interview 2*
-#table(columns:(0.6fr, 1fr),[
+#table(columns:(0.35fr, 1fr),[
   #image("A-Images/DIEGO.png")
 ],[
-  #text(size: 14pt,[ *\ Name:* Name2 \ *Occupation:* Design Center Technician & Electronics Specialist\ \ *Introduction:* Name2 is a part-time faculty member at an international school in Beijing in the design center. He specializes in electronics and electronics, and helps in various classes involving micro-controllers.])
+  #text([ *\ Name:* Name2 \ *Occupation:* Design Center Technician & Electronics Specialist\ \ *Introduction:* Name2 is a part-time faculty member at an international school in Beijing in the design center. He specializes in electronics and electronics, and helps in various classes involving micro-controllers.])
 ])
-#table(columns: (1fr, 0.4fr),stroke:none,
-[*Goals*
+*Goals*
 - To teach students programming (at varying levels of difficulty depending on grade).
-- N/A
-- N/A
 \
 
   *Frustrations*
 \
 - Existing solutions are old and/or slow.
 - The boards that currently exist which aims to simplify the learning process is only compatible with proprietary sensors, making options very limited and costly
-- N/A],
 
-[*Image placeholders*
-\
-\
-\
-*Potential Solutions*\
-1. A replacement board that features universal ports, but also a kit that can make normal components compatible.
-])
+// [*Image placeholders*
+// \
+// \
+// \
+// *Potential Solutions*\
+// 1. A replacement board that features universal ports, but also a kit that can make normal components compatible.
+// ])
 #pagebreak()
 === *Primary Persona*
 #table(columns:(1fr, 1fr,1fr),[*Where they are* 
