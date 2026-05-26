@@ -32,6 +32,7 @@ PATRICK YOUNG",center)
 - Most micro-controllers & electronics kits are un-intuitive to complete beginners, leading to frustration and confusion.
 - Small ports leads to incorrect connections, causing short-circuits.
 - Jumper wires frequently fall out of breadboard holes or make intermittent contact, making a working circuit stop working for no obvious reason.])
+\ 
 === Secondary Research
 From a Reddit thread titled  \ "What Problems Did You Face When Starting Electronics as a Hobby?"
 #table(columns:(1fr, 1fr), stroke:none, [#image("A-Images/Reddit2.png")#image("A-Images/Reddit3.png") ],[#image("A-Images/Reddit1.png")])
@@ -177,9 +178,31 @@ table.cell(stroke: none)[]
   
 #pagebreak()
 == A.3: Analyzing Existing Products
-#image("A-Images/Analysis1.png")
-
+=== Hummingbird
+#image("A-Images/Analysis1.png",width:92%)
+=== Kidsuno
+#image("A-Images/Analysis2.png",width:94%)
+=== XIAO + Seeed Studio Expansion Base
+#image("A-Images/Analysis3.png",width:98%)
+=== Arduino + DFRobot Expansion Board
+#image("A-Images/Analysis4.png",width:98%)
 #pagebreak()
+=== Comparison Chart
+#table(columns: (1.5fr,1fr,1fr,1fr),table.header[][*Aesthetics*][*Function*][*Materials*],
+[*Hummingbird* \ (12/15)],[5/5],[3/5],[4/5],
+[*Kidsuno* \ 11.5/15)],[5/5],[2.5/5],[4/5],
+[*XIAO + Seeed* \ (9/15)],[2/5],[4/5],[3/5],
+[*DFRobot* \ (7/15)],[3/5],[2/5],[2/5]
+)
+=== Summary
+Across all the products analyzed, the Hummingbird came out on top as the best existing product overall. The aesthetics of the product leaves little to be desired, it is clearly & vibrantly color-coded, and the internals are contained to create a visually appealing exterior. The functions are largely decent, but two issues holding the Hummingbird back are the exclusive use of proprietary sensors and the fatigue caused by the connector ports. The materials of the Hummingbird are quality, but it failed to score full marks due to the plastic shell appearing to be of a shattering polymer.  \ \
+The Kidsuno largely mirrored the Hummingbird in all aspects, but scored lower on function due to the even more obscure and proprietary I/O used, the unsatisfactory number of available sensors, and the lack of documentation. \ \ 
+The XIAO + Seeed Studio Expansion Base scored significantly lower in aesthetics due to the complete exposed PCB design and the immense lack of colors or clear indication on the ports. It also scored lower in function due to the primary I/O being jumper wire sockets, and the insufficient number of grove ports that would actually simplify the useage of the product. It also scored lower in materials due to the brittle buttons & switches on the board, and the exposed metal pins that could cause harm. \ \ 
+The DFRobot Expansion Board scored by far the lowest due to the extremely limited improvement in usage the board creates on top of the existing Arduino, and the bendable nature of the primary form of attachment.
+
+Overall, the Hummingbird is definitely the most well-rounded product of the four, but much can be learned and adapted from all the analyzed products.
+#pagebreak()
+
 == B.1 Problem Statement
 // === Context
 // Students of electronics across age levels and proficiencies face difficulties when using existing electronics education kits such as Hummingbird and Arduino extension boards. These kits often require abstract wiring knowledge, complex troubleshooting, and prior understanding of circuit diagrams, which many beginner learners lack, more beginner friendly kits also lack the freedom and degree of control proficient users desire. 
@@ -188,8 +211,8 @@ table.cell(stroke: none)[]
 
 === Summary of research and task analysis 
 
-Research from Criterion A has identified the primary persona. They are an adolescent electronics student. His main needs included: intuitive operation, reusability of components, reliable connections, clear conceptual learning, visible feedback for debugging, protection against bent pins and short-circuits, and suitability for repeated classroom use. They work on circuits in both a school lab and at home, typically handling jumper wires, breadboards, an Arduino board, and assorted sensors. They sometimes collaborates with classmates, meaning the product had to consider both independent learning and shared/group work, as well as durability for multiple students handling the same components.
-=== Current Situation & Need
+Research from Criterion A has identified the primary persona. They are an adolescent electronics student. Their main needs include: intuitive operation, reusability of components, reliable connections, clear conceptual learning, visible feedback for debugging, protection against bent pins and short-circuits, and suitability for repeated classroom use. They work on circuits in both a school lab and at home, typically handling jumper wires, breadboards, an Arduino board, and assorted sensors. They sometimes collaborates with classmates, meaning the product had to consider both independent learning and shared/group work, as well as durability for multiple students handling the same components.
+=== Persona Situation & Need
 
 The primary persona needs a redesigned electronics learning kit that allows them to learn microcontroller fundamentals and build circuits without losing confidence due to unreliable hardware or confusing instructions. Current solutions partially fufill their needs, but create new issues in connection reliability, component reusability, conceptual understanding, and frustration during troubleshooting.
 
@@ -203,10 +226,30 @@ Key user needs:
 
 - Clear understanding on why components work or behave in the way they do
 
-- rotection against bent pins, short-circuits, and incorrect connections
+- Protection against bent pins, short-circuits, and incorrect connections
 
 - Anti-frustration design for beginners (visual feedback, error prevention)
 
 === Design Outcome
 
 I will redesign an electronics learning kit for a beginning student who needs to learn microcontroller fundamentals and build circuits reliably while maintaining confidence and understanding. The redesigned product should improve connection stability, reduce component damage, and provide clear feedback for debugging. It should remain intuitive, reusable, durable, and suitable for both classroom and home use.
+#pagebreak()
+== B.2 Design Specifications 
+#set table(stroke: (x, y) => (
+    // y: 1pt,
+    // left: if x == 2 { 0pt }
+    y:1pt,
+    x: if y!=1 {1pt} ,
+    left: if x==0 {1pt},
+  ))
+
+    
+#table(columns:(0.7fr,2fr,0.6fr),
+    table.header[*Specification*][*Justification & Reasoning*][*Importance*],[*1. Function*],[],[],[1.1: Product should clearly convey when an error or fault has occurred],[From interviews with Peter & secondary research, a recurring frustration is that the user does not know when a misconnection or user error has occurred, resulting in fried circuitry. This also seeks to remedy the online users' worry of lack of conceptual understanding when following tutorials by providing clear feedback to the user. Given the potentially destructive nature of the faults, this specification is high priority.],
+    [#align( horizon, [- *HIGH* \ MID \ LOW])],
+    [1.2: Connectors for components must be durable, secure, easy to manipulate & not cause fatigue],[From the interview with Peter, we know that one of his biggest frustrations are inconsistent connections with circuitry, from the interview with Su, we know that classroom jumper wires are often bent beyond reuse. From the task analysis & analysis of existing products, we know that many connectors on the market can cause fatigue or pain if used for extended periods of time. Given that this issue was observed from a multitude of sources, it is high importance.],
+    [#align( horizon, [- *HIGH* \ MID \ LOW])],
+    [1.3: Product should prevent short-circuits or "frying"],[From . ],
+    [#align( horizon, [ HIGH \ 
+    - *MID* \ LOW])],
+  )
